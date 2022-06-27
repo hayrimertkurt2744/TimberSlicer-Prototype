@@ -43,3 +43,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec52c86ca6b5fbe4f90d0d0abfb1b3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDebug: 0
+  startLevelMusicOnPlay: 0
+  giveInputOnFirstClick: 0
+  takeInputCount: 0
+  showMenuOnNewSceneLoaded: 0
+  useAppMetrica: 0
+  useAppsFlyer: 0
+  clearAllPoolObjectsOnNewLevelLoad: 0
+  giveInputToUser: 0
+  currentState: 0
+  allMaterials: []
+  horizontalSpeed: 18
+  forwardSpeed: 1
+  playerSmooth: 5

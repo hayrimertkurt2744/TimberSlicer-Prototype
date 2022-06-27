@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
         Victory,
         Pause
     }
-    public const float MAX_X = 4.24f;
-    public const float MIN_X = -4.24f;
+    public const float MAX_X = 4.5f;
+    public const float MIN_X = -4.5f;
 
     [Header("Template Settings")]
     [SerializeField] private bool isDebug = true;
@@ -52,12 +52,14 @@ public class GameManager : MonoBehaviour
     [Header("Game Settings")]
     public GameState currentState = GameState.BeforeStart;
     public Material[] allMaterials;
-    public float horizontalSpeed = 20f;
-    public float forwardSpeed = 5f;
-    public float playerSmooth = 8f;
-
+    public float horizontalSpeed =50;
+    public float forwardSpeed = 1;
+    public float playerSmooth = 5;
+    public int collisionCounter = 0;
+   
     private void Awake()
     {
+        
         if (instance == null)
         {
             instance = this;
@@ -84,4 +86,5 @@ public class GameManager : MonoBehaviour
 
         Application.targetFrameRate = 60;
     }
+
 }
